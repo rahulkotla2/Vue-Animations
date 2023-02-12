@@ -102,7 +102,7 @@ export default {
     hideDialog() {
       this.dialogIsVisible = false;
     },
-  },
+  }
 };
 </script>
 
