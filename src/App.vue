@@ -95,10 +95,10 @@ button:active {
 
 .animate {
   /* transform: translateX(-150px); */
-  animation: slide-fade 0.3s ease-out forwards;
+  animation: slide-scale 0.3s ease-out forwards;
 }
 
-@keyframes slide-fade {
+@keyframes slide-scale {
   0% {
     transform: translateX(0) scale(1);
   }
@@ -113,30 +113,32 @@ button:active {
 }
 
 .v-enter-from {
-  transform: translateY(-50px);
-  opacity: 0;
+  /* transform: translateY(-50px);
+  opacity: 0; */
 }
 
 .v-enter-active {
-  transition: all 0.3s ease-out;
+  /* transition: all 0.3s ease-out; */
+  animation: slide-scale 0.3s ease-out;
 }
 
 .v-enter-to {
-  transform: translateY(0);
-  opacity: 1;
+  /* transform: translateY(0);
+  opacity: 1; */
 }
 
 .v-leave-from {
-  transform: translateY(0);
-  opacity: 1;
+  /* transform: translateY(0);
+  opacity: 1; */
 }
 
 .v-leave-active {
-  transition: all 0.3s ease-out;
+  /* transition: all 0.3s ease-out; */
+  animation: slide-scale 0.3s ease-out ;
 }
 
 .v-leave-to {
-  transform: translateY(50px);
-  opacity: 0;
+  /* transform: translateY(50px);
+  opacity: 0; */
 }
 </style>
