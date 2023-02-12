@@ -34,5 +34,16 @@ dialog {
   background-color: white;
   z-index: 100;
   border: none;
+  animation: model 0.3s ease-out;
+}
+
+@keyframes model {
+  from {
+    transform: translateY(-50px) scale(0.9);
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+  }
 }
 </style>
